@@ -1,3 +1,7 @@
 ---
+# Jekyll front matter
 ---
-@import "desinau-base";
+@import
+  "desinau/base",
+  "desinau/layout"
+;
