@@ -2,3 +2,8 @@
 sass:
   style: :compressed
 ---
+@import
+  "desinau/fonts",
+  "desinau/base",
+  "desinau/layout"
+;
