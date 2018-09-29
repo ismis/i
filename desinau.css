@@ -3,3 +3,4 @@
 ---
 {% include desinau/_fonts.scss %}
 {% include desinau/_base.scss %}
+{% include desinau/_layout.scss %}
