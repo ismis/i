@@ -1,1 +1,198 @@
+.icon {
+	font-family: "Material Icons";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+}
 
+.wrapper {
+	margin: auto;
+	max-width: 1150px;
+	position: relative;
+	width: 93%;
+}
+
+.header {
+	border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+	padding: 14px 0;
+	position: relative;
+}
+
+.header-title {
+	display: inline;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.header-subtitle {
+	background: #616161;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 14px;
+	opacity: 0;
+	padding: 8px;
+	position: absolute;
+	top: 48px;
+	transform: scale(0);
+	transform-origin: top left;
+	transition: transform .3s cubic-bezier(.4, 0, .2, 1), -webkit-transform .3s cubic-bezier(.4, 0, .2, 1);
+	z-index: 1;
+}
+
+.header-title:hover ~ .header-subtitle {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.header .btn {
+	background: transparent;
+	border-radius: 50%;
+	box-shadow: none;
+	color: #333;
+	height: 24px;
+	min-width: auto;
+	padding: 4px;
+	width: 24px;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.header .btn:focus,
+.header .btn:hover {
+	background: #e3e3e3;
+}
+
+.header .btn:active {
+	box-shadow: none;
+}
+
+.header-icons,
+.header-form,
+.header-form label,
+.header-form button {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.header-form {
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 320px;
+	opacity: 0;
+	overflow: hidden;
+	transition: width .3s;
+	width: 0;
+}
+
+.header-form-toggler:checked ~ .header-form {
+	border: 1px solid transparent;
+	border-top-color: #eee;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24);
+	opacity: 1;
+	width: 100%;
+}
+
+.header-form input {
+	-webkit-appearance: textfield; /* Correct the odd appearance in Chrome and Safari */
+	-moz-appearance: textfield;
+	background: #fff;
+	border: 0;
+	color: #777;
+	height: 46px;
+	line-height: normal; /* setting line-height on input using !important in the UA stylesheet */
+	padding: 11px 45px;
+	opacity: 1;
+	outline: 0; /* Correct the outline style in Safari */
+	overflow: hidden;
+	width: 100%;
+}
+
+/**
+ * Remove inner padding and search cancel button in IE, Safari and Chrome
+ */
+.header-form input::-ms-clear,
+.header-form input::-ms-reveal {
+	display: none;
+}
+
+.header-form input::-webkit-search-cancel-button,
+.header-form input::-webkit-search-decoration,
+.header-form input::-webkit-search-results-button,
+.header-form input::-webkit-search-results-decoration {
+	display: none;
+}
+
+/**
+* Correct the text style of placeholders in WebKit
+*/
+.header-form input::-webkit-input-placeholder {
+	color: #777;
+	opacity: 1;
+}
+
+.header-form label.btn {
+	left: 5px;
+	right: auto;
+}
+
+.header-form button.btn {
+	display: none;
+	right: 12px;
+}
+
+.header-form button.btn:hover {
+	background: transparent;
+}
+
+.header-form input:valid ~ button.btn {
+	display: block;
+}
+
+.header-menu {
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	min-width: 164px;
+	overflow: hidden;
+	opacity: 0;
+	padding: 8px 0;
+	position: absolute;
+	right: 0;
+	top: 48px;
+	transform: scale(0);
+	transform-origin: 100% 0;
+	transition: transform .3s cubic-bezier(.4, 0, .2, 1), -webkit-transform .3s cubic-bezier(.4, 0, .2, 1);
+	z-index: 2;
+}
+
+.header-menu-toggler:checked ~ .header-menu {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.header-menu a {
+	display: block;
+	font-size: 14px;
+	padding: 10px 16px;
+}
+
+.header-menu a:hover {
+	background: #eee;
+}
