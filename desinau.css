@@ -2,3 +2,4 @@
 # Jekyll front matter
 ---
 {% include desinau/_fonts.scss %}
+{% include desinau/_base.scss %}
